@@ -1,9 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Text from '../../Text'
 import './styles.css'
 
-export default props => 
-  <div className={`alternative ${props.select ? 'selected-alternative' : ''}`}>
-    <h3>{props.letter || 'A'}</h3>
-    <Text text={props.text || 'Alternative'} />
-  </div>
+export default function(props) {
+  const [alternativeState, setAlternative] = useState(null)
+
+  function selectAlternative() {
+    alternativeState !== 'selected-alternative'
+      ? setAlternative('selected-alternative') 
+      : setAlternative('')
+  }
+
+  return (
+    <div 
+      id={props.id}
+      onClick={selectAlternative} 
+      className={`alternative ${alternativeState || ''}`}
+    >
+      <h3>{props.letter || 'A'}</h3>
+      <Text text={props.text || 'Alternative'} />
+    </div>
+  )
+}  

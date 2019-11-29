@@ -9,6 +9,7 @@ function renderAlternatives(alternatives) {
   const allAlternatives = alternatives.map((alternative, i) => 
     <Alternative 
       key={i} 
+      id={alternative.id}
       letter={alternativeLetter[i]}
       text={alternative.descricao} 
     />
