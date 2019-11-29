@@ -1,0 +1,32 @@
+.button {
+  position: relative;
+  background-image: linear-gradient(to right, #f43b47 0%, #453a94 100%);
+  padding: .6rem;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  z-index: 1; }
+
+.button > p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold; }
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  z-index: -1; }
+
+.button:hover:before {
+  background-color: rgba(0, 0, 0, .1); }
+
+.button:active:before {
+  background-color: rgba(0, 0, 0, .2); }

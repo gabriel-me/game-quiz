@@ -1,0 +1,15 @@
+.alternative {
+  display: flex;
+  align-items: center; }
+
+.alternative > h3 {
+  padding: .2rem .8rem;
+  font-weight: bold;
+  color: rebeccapurple;
+  border: 1px solid rebeccapurple;
+  border-radius: .3rem;
+  margin-right: .5rem; }
+
+.selected-alternative > h3 {
+  color: #ffffff;
+  background-color: rebeccapurple; }
