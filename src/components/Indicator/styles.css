@@ -1,0 +1,17 @@
+.indicator {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: #B40404; }
+
+.indicator > section {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.indicator > section > p {
+  width: 6rem;
+  color: #ffffff; }
