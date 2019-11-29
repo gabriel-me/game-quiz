@@ -1,0 +1,25 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./bg1.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.home > main {
+  padding: 12rem 0 0 5rem;
+  max-width: 40rem; }
+
+.home > main > h1 {
+  color: #6A0888;
+  font-weight: bold; }
+
+.home > main > p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  opacity: .9; }
+
+.home > main > p > mark {
+  background: none;
+  color: red; 
+  font-weight: bold; }
