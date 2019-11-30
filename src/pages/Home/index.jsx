@@ -12,7 +12,7 @@ export default () =>
          desaﬁos, tomando a <mark>melhor decisão para você, para o cliente e para o 
          negócio</mark>. Está preparado? 
       </p>
-      <Link to="/game">
+      <Link to="/tutorial">
         <Button label="Clique aqui para aceitar o desaﬁo!" />
       </Link>
     </main>   
