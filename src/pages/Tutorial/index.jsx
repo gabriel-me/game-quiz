@@ -7,7 +7,7 @@ import './styles.css'
 export default () => 
   <div className="tutorial">
     <div className="box">
-      <Indicator bar1="1" bar2="1" />
+      <Indicator bar1="5" bar2="5" />
       <main>
         <article>
         <p>Ao lado, estão os três indicadores do game. Quando você tomar suas decisões, eles poderão 
@@ -18,7 +18,7 @@ export default () =>
         </p>
         <p>Antes de resolver cada situação, reﬂita como suas escolhas podem inﬂuenciar os indicadores.</p>
         </article>
-        <Indicator bar1="1" bar2="1" />
+        <Indicator bar1="40" bar2="60" />
       </main>
       <footer>
         <Link to="/game">

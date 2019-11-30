@@ -1,0 +1,22 @@
+.game {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./bg3.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%; }
+
+.game > img {
+  position: absolute;
+  height: 33rem;
+  width: 33rem; }
+
+.game > .box {
+  background-color: #ffffff; }
+
+.game > .box:after {
+  border-color: #ffffff; }

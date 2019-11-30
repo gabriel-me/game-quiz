@@ -2,16 +2,24 @@
   position: fixed;
   top: 15px;
   right: 15px;
-  display: inline-block;
+  display: flex; }
+
+.indicator > img {
+  height: 8rem;
+  width: 8rem; 
+  margin: 0 1rem; }
+
+.indicator > div {
   padding: 1rem;
   border-radius: .5rem;
-  background-color: #B40404; }
+  background-color: #B53232; }
 
-.indicator > section {
+.indicator > div > section {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: .25rem 0; }
 
-.indicator > section > p {
+.indicator > div > section > p {
   width: 6rem;
   color: #ffffff; }

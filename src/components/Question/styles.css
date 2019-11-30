@@ -1,3 +1,2 @@
-.question {
-  background-color: yellow;
-}
+.question > p {
+  margin-bottom: 5rem; }

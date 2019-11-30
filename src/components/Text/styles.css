@@ -1,2 +1,5 @@
 .text {
-  opacity: .8; }
+  width: 100%;
+  opacity: .8; 
+  padding: .5rem 0;
+  z-index: 1; }

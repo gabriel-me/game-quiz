@@ -3,7 +3,7 @@ import './styles.css'
 
 export default props => {
   const width = props.width || '25'
-  const color = props.color || '#045FB4'
+  const color = props.color || '#433D95'
 
   const style = { 
     width: `${width}%`,

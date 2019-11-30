@@ -1,15 +1,18 @@
 .alternative {
   display: flex;
-  align-items: center; }
+  align-items: center; 
+  margin-top: 1rem;
+  cursor: pointer; }
 
 .alternative > h3 {
   padding: .2rem .8rem;
   font-weight: bold;
-  color: rebeccapurple;
-  border: 1px solid rebeccapurple;
+  color: #6D1540;
+  border: 1px solid #6D1540;
   border-radius: .3rem;
-  margin-right: .5rem; }
+  margin-right: .5rem; 
+  z-index: 1; }
 
 .selected-alternative > h3 {
   color: #ffffff;
-  background-color: rebeccapurple; }
+  background-color: #6D1540; }

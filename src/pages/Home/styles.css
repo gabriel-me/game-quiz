@@ -1,14 +1,17 @@
 .home {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
   min-height: 100vh;
+  width: 100%;
   background-image: url("./bg1.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 100%; }
 
 .home > main {
-  padding: 12rem 0 0 5rem;
-  max-width: 40rem; }
+  margin-top: 4rem;
+  max-width: 25rem; }
 
 .home > main > h1 {
   color: #6A0888;
@@ -21,5 +24,5 @@
 
 .home > main > p > mark {
   background: none;
-  color: red; 
+  color: #C11111; 
   font-weight: bold; }

@@ -1,6 +1,46 @@
 /* Fonts
 -------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/gilroy/Gilroy-Black.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy-RegularItalic';
+  src: url('./font/gilroy/Gilroy-RegularItalic.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/gilroy/Gilroy-BlackItalic.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/gilroy/Gilroy-Regular.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/gilroy/Gilroy-Light.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./font/gilroy/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('./font/gilroy/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal; }
 
 /* Reset
 -------------------------------------------------- */
@@ -9,7 +49,7 @@
   padding: 0;
   color: #000000;
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy';
   font-weight: normal;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -32,9 +72,10 @@ h5 { font-size: 1.2rem; }
 -------------------------------------------------- */
 .box {
   position: relative;
-  width: 50rem;
-  background-color: #B40404;
-  border-radius: 1rem; }
+  width: 42rem;
+  background-color: #B53232;
+  border-radius: 1rem; 
+  padding: 1rem; }
 
 .box:after {
   content: "";
@@ -43,8 +84,9 @@ h5 { font-size: 1.2rem; }
   left: -.5rem;
   height: calc(100% + 1rem);
   width: calc(100% + 1rem);
-  border: 1px solid #B40404;
-  border-radius: 1rem; }
+  border: 1px solid #B53232;
+  border-radius: 1rem;
+  z-index: 0; }
 
 .box > footer {
   position: absolute;
@@ -52,5 +94,6 @@ h5 { font-size: 1.2rem; }
   width: calc(100% - 2rem);
   text-align: center; }
 
+.box > footer > button,
 .box > footer > a > button {
   border: 1px solid #ffffff; }

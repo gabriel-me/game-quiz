@@ -1,9 +1,9 @@
 .tutorial {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  padding-left: 4rem;
   min-height: 100vh;
   width: 100%;
-  padding: 0 0 6rem 4rem;
   background-image: url("./bg2.png");
   background-position: 50%;
   background-repeat: no-repeat;
@@ -11,13 +11,24 @@
 
 .tutorial > .box > main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem; }
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.tutorial > .box > main > article {
+  width: 48%; }
 
 .tutorial > .box > main > article > p{
   margin-bottom: 1rem;
   color: #ffffff; }
-
+  
 .tutorial > .box > main > .indicator {
-  position: relative; }
+  position: relative;
+  right: 0;
+  flex-direction: column;
+  align-items: center; }
+
+.tutorial > .box > main > .indicator > img {
+  margin-bottom: 1rem; }
+
+.tutorial > .box > main > .indicator > div {
+  background-color: rgba(247, 241, 241, 0.2); }

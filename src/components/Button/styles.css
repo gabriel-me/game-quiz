@@ -1,10 +1,9 @@
 .button {
   position: relative;
-  background-image: linear-gradient(to right, #f43b47 0%, #453a94 100%);
-  padding: .6rem;
+  background-image: linear-gradient(to right, #B53232 0%, #722D7E 100%);
+  padding: .6rem 1rem;
   border: 2px solid #ffffff;
-  text-transform: uppercase;
-  border-radius: 4px;
+  border-radius: .5rem;
   cursor: pointer;
   border: none;
   outline: none;
