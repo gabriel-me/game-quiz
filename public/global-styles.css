@@ -51,3 +51,6 @@ h5 { font-size: 1.2rem; }
   bottom: -2rem;
   width: calc(100% - 2rem);
   text-align: center; }
+
+.box > footer > a > button {
+  border: 1px solid #ffffff; }
