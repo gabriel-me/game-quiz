@@ -16,7 +16,7 @@ npm start
 
 ### Back-end
 
-Navegar até a pasta back-end/src e executar os comandos:
+Navegar até a pasta back-end/src/ e executar os comandos:
 
 ```
 npm install
