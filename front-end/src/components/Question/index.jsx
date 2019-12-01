@@ -20,6 +20,6 @@ function renderAlternatives(alternatives) {
   
 export default props => 
   <div className="question">
-    <Text text={props.question.pergunta} />
-    {renderAlternatives(props.question.alternativas)}
+    <Text text={props.question.pergunta || '...'} />
+    {props.question.alternativas ? renderAlternatives(props.question.alternativas) : ''}
   </div>
