@@ -13,7 +13,7 @@ Um simples jogo de perguntas e respostas
 git clone https://github.com/gabriel-me/game-quiz.git
 ```
 
-## Instalação das dependências
+## Instalando dependências
 
 ### Front-end
 
