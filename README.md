@@ -1,13 +1,46 @@
 # Game Quiz
 
-## Instalação por npm
+Um simples jogo de perguntas e respostas
+
+## Pré requisitos
+
+- Git (https://git-scm.com)
+- Node (https://nodejs.org)
+
+## Clonando o repositório
+
+```
+git clone https://github.com/gabriel-me/game-quiz.git
+```
+
+## Instalação das dependências
 
 ### Front-end
 
-Navegar até a pasta game-quiz/front-end/ e executar os comandos:
+```
+cd game-quiz/front-end
+```
 
 ```
 npm install
+```
+
+### Back-end
+
+```
+cd game-quiz/back-end
+```
+
+```
+npm install
+```
+
+## Testando
+
+### Front-end
+
+```
+cd game-quiz/front-end
 ```
 
 ```
@@ -16,10 +49,8 @@ npm start
 
 ### Back-end
 
-Navegar até a pasta back-end/src/ e executar os comandos:
-
 ```
-npm install
+cd game-quiz/back-end/src
 ```
 
 ```
