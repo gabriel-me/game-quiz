@@ -35,34 +35,36 @@ export default class extends React.Component {
 		event.preventDefault()
 
 		const $selectedAlternative = document.querySelector('.selected-alternative')
-		
-		const requestConfig = {
-			method: 'POST',
-			mode: 'cors',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({
-				idQuestion: this.state.question.id,
-				idAlternative: $selectedAlternative.id
-			})
+
+		if ($selectedAlternative) {
+			const requestConfig = {
+				method: 'POST',
+				mode: 'cors',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({
+					idQuestion: this.state.question.id,
+					idAlternative: $selectedAlternative.id
+				})
+			}
+	
+			const response = await fetch(gameQuizEndpoint, requestConfig)
+			const result = await response.json()
+			const indicator = result.indicators
+			const finished = result.finished
+	
+			if (finished) {
+				localStorage.setItem('satisfaction', indicator.satisfaction)
+				localStorage.setItem('loyalty', indicator.loyalty)
+				this.props.history.push('/result');
+			}
+				
+			this.renderIndicator(
+				indicator.satisfaction, 
+				indicator.loyalty
+			)
+	
+			await this.requestQuestion()
 		}
-
-		const response = await fetch(gameQuizEndpoint, requestConfig)
-		const result = await response.json()
-		const indicator = result.indicators
-		const finished = result.finished
-
-		if (finished) {
-			localStorage.setItem('satisfaction', indicator.satisfaction)
-			localStorage.setItem('loyalty', indicator.loyalty)
-			this.props.history.push('/result');
-		}
-			
-		this.renderIndicator(
-			indicator.satisfaction, 
-			indicator.loyalty
-		)
-
-		await this.requestQuestion()
 	}
 
 	renderQuestion(question) {
