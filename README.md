@@ -2,6 +2,11 @@
 
 Um simples jogo de perguntas e respostas
 
+## Tecnologias utilizadas
+
+- React.js
+- Node.js
+
 ## Pré requisitos
 
 - Git (https://git-scm.com)
